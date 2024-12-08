@@ -26,8 +26,8 @@ const ServicesSection = () => {
                             {(tags) => t.rich("subheading", tags)}
                         </SectionSubheading>
                     </div>
-                    <div className="grid grid-cols-4 w-full gap-2">
-                        <div className="h-[554px]">
+                    <div className="grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full gap-2">
+                        <div className="min-w-[350px] h-[554px]">
                             <BgImgTextBtnCard
                                 bgImg="bg-[url('/assets/family-stone-statue.jpg')]"
                                 title={t("card1.title")}
@@ -41,7 +41,7 @@ const ServicesSection = () => {
                                 theme="secondary"
                             />
                         </div>
-                        <div className="h-[554px]">
+                        <div className="min-w-[350px] h-[554px]">
                             <BgImgTextBtnCard
                                 bgImg="bg-[url('/assets/hotel-img.jpg')]"
                                 title={t("card2.title")}
@@ -55,7 +55,7 @@ const ServicesSection = () => {
                                 theme="primary"
                             />
                         </div>
-                        <div className="h-[554px]">
+                        <div className="min-w-[350px] h-[554px]">
                             <BgImgTextBtnCard
                                 bgImg="bg-[url('/assets/tour-img.jpg')]"
                                 title={t("card3.title")}
@@ -69,7 +69,7 @@ const ServicesSection = () => {
                                 theme="secondary"
                             />
                         </div>
-                        <div className="h-[554px]">
+                        <div className="min-w-[350px] h-[554px]">
                             <BgImgTextBtnCard
                                 bgImg="bg-[url('/assets/event-img.jpg')]"
                                 title={t("card4.title")}

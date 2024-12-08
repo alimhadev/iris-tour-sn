@@ -17,6 +17,11 @@ const BgImgTextBtnCard: FC<Props> = ({
     className,
     theme,
 }) => {
+    const bgColor =
+        theme === "primary" ? "bg-primary-default" : "bg-secondary-default";
+    const textColor =
+        theme === "primary" ? "text-secondary-default" : "text-primary-default";
+
     return (
         <div
             className={cn(
@@ -32,20 +37,18 @@ const BgImgTextBtnCard: FC<Props> = ({
                 } w-full h-1/2 gap-4 p-4 pb-7 rounded-b-xl`}
             >
                 <span
-                    className={`font-secondary italic text-[50px] ${
-                        theme === "primary"
-                            ? "text-secondary-default"
-                            : "text-primary-default"
-                    }`}
+                    className={`font-secondary italic text-[50px] ${textColor}`}
                 >
                     {title}
                 </span>
-                <span className="text-secondary-text text-[16px] w-[250px]">
+                <span className="text-secondary-text text-[16px] w-[250px] z-10">
                     {description}
                 </span>
             </div>
-            <div className="absolute -bottom-1 -right-5 flex justify-center items-center bg-white w-[calc(65px+20px)] h-[calc(65px+20px)] rounded-full">
-                <CircleBtn theme={theme} />
+            <div
+                className={`absolute -bottom-[2px] right-0 flex justify-center items-center border-8 border-white bg-white w-fit h-fit rounded-tl-[45px] before:content-[''] before:absolute before:-bottom-[6px] before:-left-[48px] before:w-[40px] before:h-[40px] before:${bgColor} before:rounded-br-[45px] before:shadow-[10px_10px_0px_10px] before:shadow-white after:content-[''] after:absolute after:-top-[48px] after:-right-[8px] after:w-[40px] after:h-[40px] after:${bgColor} after:rounded-br-[45px] after:shadow-[10px_10px_0px_10px] after:shadow-white`}
+            >
+                <CircleBtn theme={theme} className="z-10" />
             </div>
         </div>
     );
