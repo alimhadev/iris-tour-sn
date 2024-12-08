@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        --color-primary-default: #354739;
+        --color-primary-text: #19403f;
+        --color-secondary-default: #ce8624;
+    }
+}
+
+@layer utilities {
+    .font-secondary {
+        font-family: garamond, serif;
+    }
+}

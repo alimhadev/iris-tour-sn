@@ -1,0 +1,147 @@
+{
+    "Header": {
+        "Navbar": {
+            "Home": "Accueil",
+            "Tourism": "Tourisme",
+            "Hotels": "Hôtels",
+            "Tours": "Excursions",
+            "Events": "Événements",
+            "Contact": "Contact"
+        },
+        "Buttons": {
+            "Booking": "Réservation"
+        }
+    },
+    "Footer": {
+        "col1": {
+            "title": "Liens Utiles",
+            "row1": {
+                "url": "/",
+                "text": "Accueil"
+            },
+            "row2": {
+                "url": "/tourism",
+                "text": "Tourisme"
+            },
+            "row3": {
+                "url": "/hotels",
+                "text": "Hôtels"
+            },
+            "row4": {
+                "url": "/tours",
+                "text": "Excursions"
+            },
+            "row5": {
+                "url": "/events",
+                "text": "Événements"
+            },
+            "row6": {
+                "url": "/contact",
+                "text": "Contact"
+            }
+        },
+        "col2": {
+            "title": "Autres pages",
+            "row1": {
+                "url": "/privacy-policy",
+                "text": "Vie privée et politique"
+            },
+            "row2": {
+                "url": "/terms-of-use",
+                "text": "Conditions d'utilisation"
+            },
+            "row3": {
+                "url": "/disclaimer",
+                "text": "Clause de non-responsabilité"
+            },
+            "row4": {
+                "url": "/faq",
+                "text": "FAQ"
+            }
+        },
+        "col3": {
+            "title": "Contacts",
+            "row1": {
+                "url": "tel:+221781234569",
+                "text": "00221 78 123 45 69"
+            },
+            "row2": {
+                "url": "mailto:contact@iristour.com",
+                "text": "Contact@iristour.com"
+            },
+            "row3": {
+                "text": "Dakar - Sénégal"
+            }
+        },
+        "col4": {
+            "title": "Faire une réservation",
+            "description": "Notre équipe d'assistance et de <br></br> vente est disponible 24 heures <br></br> sur 24 et 7 jours sur 7 pour <br></br> répondre à vos questions.",
+            "tel": {
+                "url": "tel:+221781234569",
+                "text": "00221 78 123 45 69"
+            }
+        },
+        "copyright": "Tous droits réservés ! Copyright 2024"
+    },
+    "HomePage": {
+        "HeroSection": {
+            "tag": "Tourisme",
+            "heading": "<span1>Explorez le <br></br> Sénégal <br></br> avec</span1> <span2>Iris Tour.</span2>",
+            "subheading": "Découvrez des destinations inoubliables, des <br></br> hotels de luxe et des excursions exclusives.",
+            "cta": "Réservation"
+        },
+        "ServicesSection": {
+            "heading": "<span1>Nos </span1> <span2>Services</span2>",
+            "subheading": "De la découverte culturelle aux événements mémorables, <br></br> IRIS TOUR réalise vos envies.",
+            "card1": {
+                "title": "Sites touristiques",
+                "description": "<span1>Les plus </span1> <span2>beaux sites touristiques </span2> <span1>du Sénégal à découvrir.</span1>"
+            },
+            "card2": {
+                "title": "Hôtels de Luxe",
+                "description": "<span1>Séjournez dans des endroits </span1> <span2>prestigieux et confortables.</span2>"
+            },
+            "card3": {
+                "title": "Excursions",
+                "description": "<span1>Vivez des aventures uniques dans des </span1> <span2>lieux paradisiaques.</span2>"
+            },
+            "card4": {
+                "title": "Événements",
+                "description": "<span1>Participez à des </span1> <span2>événements exclusifs </span2> <span1>tout au long de l'année.</span1>"
+            }
+        },
+        "FavoritePlacesSection": {
+            "heading": "<span1>Lieux </span1> <span2>Favoris</span2>",
+            "subheading": "Découvrez nos coups de cœur : des lieux qui captivent et <br></br> racontent l'âme du Sénégal"
+        },
+        "TestimonialsSection": {
+            "heading": "<span1>Les </span1> <span2>Témoignages</span2>",
+            "subheading": "Découvrez nos coups de cœur : des lieux <br></br> qui captivent et racontent l'âme du <br></br> Sénégal",
+            "cta": "Faites comme eux"
+        },
+        "NewsletterSection": {
+            "heading": "<span1>News</span1> <span2>Letter</span2>",
+            "subheading": "Restez connectés ! Recevez nos offres exclusives et nos <br></br> idées de voyages directement dans votre boîte mail."
+        }
+    },
+    "TourismPage": {
+        "HeroSection": {
+            "heading": "<span1>Découvrez les <br></br> trésors du Sénégal</span1>",
+            "subheading": "Des plages paradisiaques aux paysages époustouflants, le Sénégal <br></br> vous offre des lieux uniques à explorer."
+        },
+        "MapLocationSection": {
+            "heading": "<span1>Map </span1> <span2>Localisation</span2>",
+            "subheading": "Cliquez sur une région du Sénégal et <br></br> découvrez les coins disponibles."
+        }
+    },
+    "HotelsPage": {
+        "HeroSection": {
+            "heading": "<span1>Séjournez dans le <br></br> luxe au Sénégal</span1>",
+            "subheading": "Choisissez parmi une sélection d'hôtels 5 étoiles pour une <br></br> expérience inoubliable."
+        },
+        "MapLocationSection": {
+            "heading": "<span1>Map </span1> <span2>Localisation</span2>",
+            "subheading": "Cliquez sur une région du Sénégal et <br></br> découvrez l’hôtel disponible."
+        }
+    }
+}
