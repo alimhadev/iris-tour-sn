@@ -21,7 +21,10 @@ const TestimonialsSection = () => {
                     <div></div>
                     <div className="flex flex-col items-end gap-72">
                         <div className="flex flex-col">
-                            <SectionHeading span1ClassName="text-white">
+                            <SectionHeading
+                                className="text-center"
+                                span1ClassName="text-white"
+                            >
                                 {(tags) => t.rich("heading", tags)}
                             </SectionHeading>
                             <SectionSubheading className="text-white text-right">

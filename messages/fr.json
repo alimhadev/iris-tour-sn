@@ -112,7 +112,18 @@
         },
         "FavoritePlacesSection": {
             "heading": "<span1>Lieux </span1> <span2>Favoris</span2>",
-            "subheading": "Découvrez nos coups de cœur : des lieux qui captivent et <br></br> racontent l'âme du Sénégal"
+            "subheading": "Découvrez nos coups de cœur : des lieux qui captivent et <br></br> racontent l'âme du Sénégal",
+            "card": {
+                "section1": {
+                    "city": "Dakar",
+                    "placeName": "Île de Gorée",
+                    "cta": "Visiter"
+                },
+                "section2": {
+                    "title": "Carte du Sénégal",
+                    "cta": "Itinéraire"
+                }
+            }
         },
         "TestimonialsSection": {
             "heading": "<span1>Les </span1> <span2>Témoignages</span2>",

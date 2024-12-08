@@ -19,7 +19,7 @@ const ServicesSection = () => {
                 </div>
                 <div className="flex flex-col items-center w-full h-full gap-10">
                     <div className="flex flex-col items-center">
-                        <SectionHeading>
+                        <SectionHeading className="text-center">
                             {(tags) => t.rich("heading", tags)}
                         </SectionHeading>
                         <SectionSubheading>

@@ -8,6 +8,7 @@ interface RightCircleLinkBtnProps {
     text: string;
     Icon?: ElementType;
     className?: string;
+    textClassName?: string;
 }
 
 const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
@@ -15,6 +16,7 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
     text,
     Icon = ArrowRight,
     className,
+    textClassName,
 }) => {
     return (
         <Link
@@ -24,9 +26,12 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
                 className
             )}
         >
-            {text}
+            <span className={cn("", textClassName)}>{text}</span>
+
             {Icon && ( // Ensure Icon is only rendered if provided
-                <span className="flex justify-center items-center bg-primary-default group-hover:bg-secondary-default w-14 h-14 rounded-full transition">
+                <span
+                    className={`flex justify-center items-center bg-primary-default group-hover:bg-secondary-default w-14 h-14 rounded-full transition`}
+                >
                     <Icon className="stroke-secondary-default group-hover:stroke-primary-default transition" />
                 </span>
             )}

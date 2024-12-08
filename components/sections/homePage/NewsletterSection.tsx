@@ -22,7 +22,7 @@ const NewsletterSection = () => {
                 </div>
                 <div className="flex flex-col items-center w-full h-full gap-14">
                     <div className="flex flex-col items-center">
-                        <SectionHeading>
+                        <SectionHeading className="text-center">
                             {(tags) => t.rich("heading", tags)}
                         </SectionHeading>
                         <SectionSubheading>
