@@ -45,7 +45,13 @@ const NewsletterForm = () => {
                             control={form.control}
                             name="name"
                             render={({ field }) => (
-                                <FormItemInput label="Nom :" field={field} />
+                                <FormItemInput
+                                    label="Nom :"
+                                    field={{
+                                        ...field,
+                                        error: form.formState.errors.name,
+                                    }}
+                                />
                             )}
                         />
 
@@ -56,12 +62,16 @@ const NewsletterForm = () => {
                                 <FormItemInput
                                     type="email"
                                     label="Email :"
-                                    field={field}
+                                    field={{
+                                        ...field,
+                                        error: form.formState.errors.email,
+                                    }}
                                 />
                             )}
                         />
                     </div>
                     <RightCircleLinkBtn
+                        tag="Button"
                         text="Envoyer"
                         className="w-full min-w-[200px] max-w-[390px]"
                         textClassName="pl-4"

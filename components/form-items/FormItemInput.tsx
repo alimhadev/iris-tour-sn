@@ -23,7 +23,11 @@ const FormItemInput = ({
     field,
 }: FormItemInputProps) => {
     return (
-        <FormItem className="bg-gray-100 w-full pt-20 pb-4 px-5 rounded-[20px]">
+        <FormItem
+            className={`relative bg-gray-100 ${
+                field.error && "border border-red-500"
+            } w-full pt-20 pb-4 px-5 rounded-[20px]`}
+        >
             <div className="flex items-end border-b border-secondary-default  gap-2">
                 <FormLabel className="text-[32px] leading-tight text-primary-default whitespace-nowrap">
                     {label}
@@ -37,7 +41,7 @@ const FormItemInput = ({
                     />
                 </FormControl>
             </div>
-            <FormMessage />
+            <FormMessage className="absolute top-2 text-[18px]" />
         </FormItem>
     );
 };
