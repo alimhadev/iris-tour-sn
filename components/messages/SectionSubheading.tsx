@@ -12,7 +12,7 @@ const SectionSubheading = ({ children, className }: Props) => {
     return (
         <p
             className={cn(
-                "font-light text-[24px] text-center text-primary-text",
+                "font-light text-[clamp(16px,_2vw,_24px)] text-center text-primary-text",
                 className
             )}
         >

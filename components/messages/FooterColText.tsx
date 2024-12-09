@@ -8,7 +8,12 @@ interface FooterColTextProps {
 
 const FooterColText: FC<FooterColTextProps> = ({ children, className }) => {
     return (
-        <p className={cn("text-white text-[24px] transition", className)}>
+        <p
+            className={cn(
+                "text-white text-[clamp(16px,_3vw,_24px)] transition",
+                className
+            )}
+        >
             {children}
         </p>
     );

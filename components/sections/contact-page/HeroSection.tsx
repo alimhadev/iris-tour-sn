@@ -15,7 +15,7 @@ const HeroSection = () => {
         >
             <SectionContainer>
                 <div className="flex justify-center items-center w-full h-full">
-                    <HeroHeadingRichText span1ClassName="text-[93px]">
+                    <HeroHeadingRichText span1ClassName="text-[clamp(32px,_6vw,_93px)]">
                         {(tags) => t.rich("heading", tags)}
                     </HeroHeadingRichText>
                 </div>

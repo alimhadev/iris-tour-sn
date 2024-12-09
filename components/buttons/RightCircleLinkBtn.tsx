@@ -25,7 +25,7 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
             <Link
                 href={url}
                 className={cn(
-                    "group flex items-center font-bold text-primary-default hover:text-secondary-default text-[22px] border border-secondary-default bg-secondary-default hover:bg-transparent w-fit h-fit pl-7 pr-2 py-2 gap-3 rounded-full transition",
+                    "group flex items-center font-bold text-primary-default hover:text-secondary-default text-[clamp(18px,_2vw,_22px)] border border-secondary-default bg-secondary-default hover:bg-transparent w-fit h-fit pl-7 pr-2 py-2 gap-3 rounded-full transition",
                     className
                 )}
             >
@@ -52,7 +52,7 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
     return (
         <button
             className={cn(
-                "group flex items-center font-bold text-primary-default hover:text-secondary-default text-[22px] border border-secondary-default bg-secondary-default hover:bg-transparent w-fit h-fit pl-7 pr-2 py-2 gap-3 rounded-full transition",
+                "group flex items-center font-bold text-primary-default hover:text-secondary-default text-[clamp(18px,_2vw,_22px)] border border-secondary-default bg-secondary-default hover:bg-transparent w-fit h-fit pl-7 pr-2 py-2 gap-3 rounded-full transition",
                 className
             )}
         >

@@ -17,12 +17,12 @@ const SectionHeading: FC<SectionHeadingProps> = ({
     span2ClassName,
 }) => {
     return (
-        <h2 className={cn("", className)}>
+        <h2 className={cn("text-center", className)}>
             {children({
                 span1: (chunks) => (
                     <span
                         className={cn(
-                            "font-bold text-primary-default text-[64px]",
+                            "font-bold text-primary-default text-[clamp(36px,_6vw,_64px)]",
                             span1ClassName
                         )}
                     >
@@ -32,7 +32,7 @@ const SectionHeading: FC<SectionHeadingProps> = ({
                 span2: (chunks) => (
                     <span
                         className={cn(
-                            "italic text-secondary-default font-secondary text-[80px]",
+                            "italic text-secondary-default font-secondary text-[clamp(42px,_7vw,_80px)]",
                             span2ClassName
                         )}
                     >

@@ -20,8 +20,8 @@ const Footer = () => {
             <div className="flex justify-center items-center bg-primary-default w-full h-full pt-28 pb-10 mt-4">
                 <SectionContainer>
                     <div className="flex flex-col gap-10">
-                        <div className="flex flex-wrap justify-between gap-10">
-                            <div className="flex flex-col gap-4">
+                        <div className="flex flex-wrap justify-center min-[426px]:justify-between text-center min-[426px]:text-start gap-10">
+                            <div className="flex flex-col items-center min-[426px]:items-start gap-4">
                                 <FooterColTitle>
                                     {t("col1.title")}
                                 </FooterColTitle>
@@ -99,7 +99,7 @@ const Footer = () => {
                                     })}
                                 </FooterColText>
                                 <FooterColA
-                                    className="group flex items-center font-black text-[26px] border border-secondary-default bg-secondary-default hover:bg-transparent gap-4 px-5 py-3 mt-10 rounded-full"
+                                    className="group flex items-center font-black text-[clamp(20px,_3vw,_26px)] border border-secondary-default bg-secondary-default hover:bg-transparent gap-4 px-5 py-3 mt-10 rounded-full whitespace-nowrap"
                                     url={t("col4.tel.url")}
                                 >
                                     <PhoneIconBig className="stroke-white group-hover:stroke-secondary-default transition" />
@@ -107,9 +107,11 @@ const Footer = () => {
                                 </FooterColA>
                             </div>
                         </div>
-                        <div className="relative flex flex-col sm:flex-row justify-between items-center border-t border-white/40 w-full gap-5 pt-5">
+                        <div className="relative flex flex-col min-[426px]:flex-row justify-between items-center border-t border-white/40 w-full gap-5 pt-5">
                             <Logo />
-                            <FooterColText>{t("copyright")}</FooterColText>
+                            <FooterColText className="text-center">
+                                {t("copyright")}
+                            </FooterColText>
                             <div className="absolute -top-10 left-[43%]">
                                 <DotsDeco5 />
                             </div>

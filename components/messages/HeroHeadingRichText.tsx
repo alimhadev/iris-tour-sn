@@ -17,12 +17,12 @@ const HeroHeadingRichText = ({
     span2ClassName,
 }: Props) => {
     return (
-        <h1 className={cn("leading-none", className)}>
+        <h1 className={cn("leading-none text-center lg:text-start", className)}>
             {children({
                 span1: (chunks) => (
                     <span
                         className={cn(
-                            "font-bold text-white text-[90px]",
+                            "font-bold text-white text-[clamp(44px,_6vw,_74px)]",
                             span1ClassName
                         )}
                     >
@@ -32,7 +32,7 @@ const HeroHeadingRichText = ({
                 span2: (chunks) => (
                     <span
                         className={cn(
-                            "italic text-secondary-default font-secondary text-[87px]",
+                            "italic text-secondary-default font-secondary text-[clamp(44px,_6vw,_74px)]",
                             span2ClassName
                         )}
                     >

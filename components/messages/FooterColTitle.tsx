@@ -10,7 +10,7 @@ const FooterColTitle: FC<FooterColTitleProps> = ({ children, className }) => {
     return (
         <h2
             className={cn(
-                "font-semibold text-secondary-default text-[34px]",
+                "font-semibold text-secondary-default text-[clamp(24px,_4vw,_34px)]",
                 className
             )}
         >

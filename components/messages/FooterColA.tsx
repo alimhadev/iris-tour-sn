@@ -16,7 +16,7 @@ const FooterColLink: FC<FooterColLinkProps> = ({
         <a
             href={url}
             className={cn(
-                "text-white hover:text-secondary-default text-[24px] transition",
+                "text-white hover:text-secondary-default text-[clamp(16px,_3vw,_24px)] transition",
                 className
             )}
         >

@@ -163,8 +163,8 @@
     },
     "EventsPage": {
         "HeroSection": {
-            "heading": "<span1>Assistez à des événements inoubliables</span1>",
-            "subheading": "Ne manquez pas les événements incontournables au Sénégal, du festival aux soirées exclusives."
+            "heading": "<span1>Assistez à des <br></br> événements <br></br> inoubliables</span1>",
+            "subheading": "Ne manquez pas les événements incontournables au Sénégal, <br></br> du festival aux soirées exclusives."
         }
     },
     "ContactPage": {
