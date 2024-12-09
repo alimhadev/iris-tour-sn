@@ -29,8 +29,8 @@ const NewsletterSection = () => {
                             {(tags) => t.rich("subheading", tags)}
                         </SectionSubheading>
                     </div>
-                    <div className="flex justify-between items-center w-full gap-5">
-                        <div className="grid grid-cols-2 w-1/2 h-fit gap-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-5">
+                        <div className="grid grid-cols-2 gap-5">
                             <ImgCard bgUrl={bridgeImg} />
                             <ImgCard bgUrl={canoeImg} />
                             <ImgCard
@@ -38,7 +38,9 @@ const NewsletterSection = () => {
                                 className="col-span-2 "
                             />
                         </div>
-                        <div>{/* <NewsletterForm /> */}</div>
+                        <div>
+                            <NewsletterForm />
+                        </div>
                     </div>
                 </div>
             </SectionContainer>

@@ -22,11 +22,15 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
         <Link
             href={url}
             className={cn(
-                "group flex justify-center items-center font-bold text-primary-default hover:text-secondary-default text-[22px] border border-secondary-default bg-secondary-default hover:bg-transparent w-fit h-fit pl-7 pr-2 py-2 gap-3 rounded-full transition",
+                "group flex items-center font-bold text-primary-default hover:text-secondary-default text-[22px] border border-secondary-default bg-secondary-default hover:bg-transparent w-fit h-fit pl-7 pr-2 py-2 gap-3 rounded-full transition",
                 className
             )}
         >
-            <span className={cn("", textClassName)}>{text}</span>
+            <span
+                className={cn("flex justify-center flex-auto", textClassName)}
+            >
+                {text}
+            </span>
 
             {Icon && ( // Ensure Icon is only rendered if provided
                 <span

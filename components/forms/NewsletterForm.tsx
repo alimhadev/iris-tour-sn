@@ -1,3 +1,5 @@
+"use client";
+
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
@@ -12,6 +14,8 @@ import {
 import { Input } from "../ui/input";
 import { newsletterSchema } from "@/utils/validations/newsletter";
 import { useForm } from "react-hook-form";
+import FormItemInput from "../form-items/FormItemInput";
+import RightCircleLinkBtn from "../buttons/RightCircleLinkBtn";
 
 type FormSchema = z.infer<typeof newsletterSchema>;
 
@@ -30,36 +34,39 @@ const NewsletterForm = () => {
 
     return (
         <Form {...form}>
-            <form method="POST" onSubmit={form.handleSubmit(onSubmit)}>
-                <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormControl>
-                                <Input placeholder="Nom" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
+            <form
+                method="POST"
+                className="w-full h-full"
+                onSubmit={form.handleSubmit(onSubmit)}
+            >
+                <div className="flex flex-col justify-between items-center bg-white w-full h-full gap-20 p-10 rounded-[20px] border border-secondary-default">
+                    <div className="flex flex-col justify-between w-full gap-10">
+                        <FormField
+                            control={form.control}
+                            name="name"
+                            render={({ field }) => (
+                                <FormItemInput label="Nom :" field={field} />
+                            )}
+                        />
 
-                <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormControl>
-                                <Input
+                        <FormField
+                            control={form.control}
+                            name="email"
+                            render={({ field }) => (
+                                <FormItemInput
                                     type="email"
-                                    placeholder="Email"
-                                    {...field}
+                                    label="Email :"
+                                    field={field}
                                 />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
+                            )}
+                        />
+                    </div>
+                    <RightCircleLinkBtn
+                        text="Envoyer"
+                        className="w-full min-w-[200px] max-w-[390px]"
+                        textClassName="pl-4"
+                    />
+                </div>
             </form>
         </Form>
     );

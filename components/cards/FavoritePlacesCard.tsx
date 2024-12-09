@@ -49,11 +49,7 @@ const FavoritePlacesCard = ({
                             </div>
                         </div>
                         <div>
-                            <RightCircleLinkBtn
-                                text={t("section1.cta")}
-                                className="pl-14"
-                                textClassName="pr-5"
-                            />
+                            <RightCircleLinkBtn text={t("section1.cta")} />
                         </div>
                     </div>
                 </div>
