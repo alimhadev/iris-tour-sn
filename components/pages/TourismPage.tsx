@@ -1,6 +1,6 @@
 import Main from "@/components/layouts/Main";
-import HeroSection from "../sections/tourismPage/HeroSection";
-import MapLocationSection from "../sections/tourismPage/MapLocationSection";
+import HeroSection from "../sections/tourism-page/HeroSection";
+import MapLocationSection from "../sections/tourism-page/MapLocationSection";
 
 const TourismPage = () => {
     return (

@@ -1,7 +1,7 @@
-import Main from "@/components/layouts/Main";
+import ToursPage from "@/components/pages/ToursPage";
 
 const page = () => {
-    return <Main>page</Main>;
+    return <ToursPage />;
 };
 
 export default page;

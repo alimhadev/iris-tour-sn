@@ -154,5 +154,22 @@
             "heading": "<span1>Map </span1> <span2>Localisation</span2>",
             "subheading": "Cliquez sur une région du Sénégal et <br></br> découvrez l’hôtel disponible."
         }
+    },
+    "ToursPage": {
+        "HeroSection": {
+            "heading": "<span1>Vivez des aventures <br></br> exceptionnelles</span1>",
+            "subheading": "Explorez des sites incroyables et partez à la découverte de lieux <br></br> paradisiaques du Sénégal."
+        }
+    },
+    "EventsPage": {
+        "HeroSection": {
+            "heading": "<span1>Assistez à des événements inoubliables</span1>",
+            "subheading": "Ne manquez pas les événements incontournables au Sénégal, du festival aux soirées exclusives."
+        }
+    },
+    "ContactPage": {
+        "HeroSection": {
+            "heading": "<span1>Contactez-nous</span1>"
+        }
     }
 }

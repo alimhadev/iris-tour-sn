@@ -1,7 +1,7 @@
-import Main from "@/components/layouts/Main";
+import ContactPage from "@/components/pages/ContactPage";
 
 const page = () => {
-    return <Main>page</Main>;
+    return <ContactPage />;
 };
 
 export default page;

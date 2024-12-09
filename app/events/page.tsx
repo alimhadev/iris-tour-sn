@@ -1,7 +1,7 @@
-import Main from "@/components/layouts/Main";
+import EventsPage from "@/components/pages/EventsPage";
 
 const page = () => {
-    return <Main>page</Main>;
+    return <EventsPage />;
 };
 
 export default page;

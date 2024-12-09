@@ -1,14 +1,16 @@
+import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
 type Tag = "br";
 
 interface Props {
     children(tags: Record<Tag, (chunks: ReactNode) => ReactNode>): ReactNode;
+    className?: string;
 }
 
-const HeroSubheading = ({ children }: Props) => {
+const HeroSubheading = ({ children, className }: Props) => {
     return (
-        <p className="font-light text-[24px] text-white">
+        <p className={cn("font-light text-[24px] text-white", className)}>
             {children({
                 br: () => <br />,
             })}

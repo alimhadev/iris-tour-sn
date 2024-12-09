@@ -14,18 +14,13 @@ const HeroSection = () => {
             className="h-[540px]"
         >
             <SectionContainer>
-                <div className="flex justify-between items-center w-full h-full py-4">
-                    <div className="flex flex-col gap-10">
-                        <div className="flex flex-col gap-3">
-                            <HeroHeadingRichText span1ClassName="text-[74px]">
-                                {(tags) => t.rich("heading", tags)}
-                            </HeroHeadingRichText>
-                            <HeroSubheading>
-                                {(tags) => t.rich("subheading", tags)}
-                            </HeroSubheading>
-                        </div>
-                    </div>
-                    <div></div>
+                <div className="flex flex-col justify-center w-full h-full gap-3">
+                    <HeroHeadingRichText span1ClassName="text-[74px]">
+                        {(tags) => t.rich("heading", tags)}
+                    </HeroHeadingRichText>
+                    <HeroSubheading>
+                        {(tags) => t.rich("subheading", tags)}
+                    </HeroSubheading>
                 </div>
             </SectionContainer>
         </HeroPattern>

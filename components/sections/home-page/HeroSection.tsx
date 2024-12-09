@@ -10,7 +10,7 @@ const HeroSection = () => {
     const t = useTranslations("HomePage.HeroSection");
 
     return (
-        <HeroPattern bgImg=" bg-[url('/assets/hero-img1.png')]">
+        <HeroPattern bgImg="bg-[url('/assets/hero-img1.png')]">
             <SectionContainer>
                 <div className="flex justify-between items-center w-full h-full py-4">
                     <div className="flex flex-col gap-10">
