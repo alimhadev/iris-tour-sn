@@ -19,9 +19,9 @@ const HeroSection = () => {
                                 {t("tag")}
                             </span>
                             <HeroHeadingRichText
-                                className="text-center md:text-start "
+                                className="text-center md:text-start"
                                 span1ClassName="text-[clamp(54px,_6vw,_90px)]"
-                                span2ClassName="relative text-[clamp(54px,_6vw,_87px)] z-10 before:content-[''] before:absolute before:bottom-0 before:bg-primary-default before:w-full before:h-[40px] before:z-[-1]"
+                                span2ClassName="relative text-[clamp(54px,_6vw,_87px)] box-decoration-slice bg-primary-default lg:bg-transparent z-10 before:content-[''] before:absolute before:bottom-0 before:bg-primary-default before:w-full before:h-[40px] before:z-[-1]"
                             >
                                 {(tags) => t.rich("heading", tags)}
                             </HeroHeadingRichText>
