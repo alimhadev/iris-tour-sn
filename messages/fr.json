@@ -140,6 +140,10 @@
             "heading": "<span1>Découvrez les <br></br> trésors du Sénégal</span1>",
             "subheading": "Des plages paradisiaques aux paysages époustouflants, le Sénégal <br></br> vous offre des lieux uniques à explorer."
         },
+        "PlacesSection": {
+            "readMore": "Lire la suite",
+            "cta": "Réservation"
+        },
         "MapLocationSection": {
             "heading": "<span1>Map </span1> <span2>Localisation</span2>",
             "subheading": "Cliquez sur une région du Sénégal et <br></br> découvrez les coins disponibles."
