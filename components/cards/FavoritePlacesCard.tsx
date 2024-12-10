@@ -25,16 +25,16 @@ const FavoritePlacesCard = ({
             >
                 <div className="flex flex-col justify-between w-full h-full">
                     <div className="flex justify-between items-center w-full h-fit px-8 py-5">
-                        <span className="font-thin text-white text-[33px]">
+                        <span className="font-thin text-white text-[clamp(24px,_3vw,_33px)]">
                             {city}
                         </span>
                         <button>
                             <HeartIcon className={`fill-white`} />
                         </button>
                     </div>
-                    <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-t from-white/35 backdrop-blur-sm h-fit gap-10 px-8 pt-20 pb-8">
+                    <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-t from-white/35 backdrop-blur-sm h-fit gap-10 px-8 pt-10 md:pt-20 pb-8">
                         <div className="flex flex-col items-center md:items-start h-fit gap-4">
-                            <span className="font-thin font-secondary italic text-white text-[68px] leading-[46px] text-center md:text-left">
+                            <span className="font-thin font-secondary italic text-white text-[clamp(40px,_6vw,_68px)] leading-[46px] text-center md:text-left">
                                 {placeName}
                             </span>
                             <div className="flex items-center gap-1">

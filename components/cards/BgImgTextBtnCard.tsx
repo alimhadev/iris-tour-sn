@@ -37,11 +37,11 @@ const BgImgTextBtnCard: FC<Props> = ({
                 } w-full h-1/2 gap-4 p-4 pb-7 rounded-b-xl`}
             >
                 <span
-                    className={`font-secondary italic text-[50px] ${textColor}`}
+                    className={`font-secondary italic text-[clamp(30px,_6vw,_50px)] ${textColor}`}
                 >
                     {title}
                 </span>
-                <span className="text-secondary-text text-[16px] w-[250px] z-10">
+                <span className="text-secondary-text w-full max-w-[200px] md:max-w-[250px] z-10">
                     {description}
                 </span>
             </div>

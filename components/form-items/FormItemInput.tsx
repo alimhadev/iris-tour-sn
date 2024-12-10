@@ -29,7 +29,7 @@ const FormItemInput = ({
             } w-full pt-20 pb-4 px-5 rounded-[20px]`}
         >
             <div className="flex items-end border-b border-secondary-default  gap-2">
-                <FormLabel className="text-[32px] leading-tight text-primary-default whitespace-nowrap">
+                <FormLabel className="text-[clamp(24px,_3vw,_32px)] leading-tight text-primary-default whitespace-nowrap">
                     {label}
                 </FormLabel>
                 <FormControl>
@@ -41,7 +41,7 @@ const FormItemInput = ({
                     />
                 </FormControl>
             </div>
-            <FormMessage className="absolute top-2 text-[18px]" />
+            <FormMessage className="absolute top-2 text-[clamp(14px,_2vw,_18px)]" />
         </FormItem>
     );
 };

@@ -24,7 +24,7 @@ const TwoSpanDescription: FC<TwoSpanDescriptionProps> = ({
                 span1: (chunks) => (
                     <span
                         className={cn(
-                            `font-bold text-xl leading-[22px] ${
+                            `font-bold text-[clamp(14px,_2vw,_18px)] leading-[22px] ${
                                 theme === "primary"
                                     ? "text-secondary-default"
                                     : "text-primary-default"
@@ -38,7 +38,7 @@ const TwoSpanDescription: FC<TwoSpanDescriptionProps> = ({
                 span2: (chunks) => (
                     <span
                         className={cn(
-                            `italic text-xl leading-[22px] text-white font-secondary`,
+                            `italic text-[clamp(14px,_2vw,_18px)] leading-[22px] text-white font-secondary`,
                             span2ClassName
                         )}
                     >

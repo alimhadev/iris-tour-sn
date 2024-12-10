@@ -17,21 +17,21 @@ const TestimonialsSection = () => {
                     <DotsDeco3 />
                 </div>
 
-                <div className="flex justify-between items-center w-full h-full gap-10">
-                    <div></div>
-                    <div className="flex flex-col items-end gap-72">
-                        <div className="flex flex-col">
+                <div className="flex justify-center lg:justify-between items-center w-full h-full gap-10">
+                    <div className="hidden lg:block"></div>
+                    <div className="flex flex-col items-end gap-10 lg:gap-72">
+                        <div className="flex flex-col items-center lg:items-end">
                             <SectionHeading
-                                className="text-center"
+                                className="text-center lg:text-right"
                                 span1ClassName="text-white"
                             >
                                 {(tags) => t.rich("heading", tags)}
                             </SectionHeading>
-                            <SectionSubheading className="text-white text-right">
+                            <SectionSubheading className="text-white text-center lg:text-right">
                                 {(tags) => t.rich("subheading", tags)}
                             </SectionSubheading>
                         </div>
-                        <div>
+                        <div className="flex justify-center lg:justify-end w-full">
                             <RightCircleLinkBtn text={t("cta")} />
                         </div>
                     </div>

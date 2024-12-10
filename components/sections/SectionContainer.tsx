@@ -11,7 +11,7 @@ const SectionContainer: FC<SectionContainerProps> = ({
     className,
 }) => {
     return (
-        <div className={cn("container w-full h-full px-10", className)}>
+        <div className={cn("container w-full h-full px-2 sm:px-10", className)}>
             {children}
         </div>
     );
