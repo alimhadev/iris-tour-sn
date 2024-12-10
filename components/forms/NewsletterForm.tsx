@@ -39,7 +39,7 @@ const NewsletterForm = () => {
                 className="w-full h-full"
                 onSubmit={form.handleSubmit(onSubmit)}
             >
-                <div className="flex flex-col justify-between items-center bg-white w-full h-full gap-20 p-10 rounded-[20px] border border-secondary-default">
+                <div className="flex flex-col justify-between items-center bg-white w-full h-full gap-20 p-5 md:p-10 rounded-[35px] border border-secondary-default">
                     <div className="flex flex-col justify-between w-full gap-10">
                         <FormField
                             control={form.control}

@@ -29,7 +29,9 @@ const FavoritePlacesCard = ({
                             {city}
                         </span>
                         <button>
-                            <HeartIcon className={`fill-white`} />
+                            <HeartIcon
+                                className={`fill-white scale-75 md:scale-100`}
+                            />
                         </button>
                     </div>
                     <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-t from-white/35 backdrop-blur-sm h-fit gap-10 px-8 pt-10 md:pt-20 pb-8">
