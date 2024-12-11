@@ -56,7 +56,7 @@ const PlaceCard: FC<PlaceCardProps> = ({ place }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start border border-secondary-default w-full h-fit gap-10 pt-4 pb-6 rounded-[30px] shadow-lg">
+            <div className="flex flex-col items-start border border-secondary-default bg-white w-full h-fit gap-10 pt-4 pb-6 rounded-[30px] shadow-lg">
                 <p className="text-[clamp(16px,_2vw,_18px)] overflow-ellipsis line-clamp-4 px-3 sm:px-5">
                     {place.description}
                 </p>
