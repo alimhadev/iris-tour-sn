@@ -147,6 +147,11 @@
         "MapLocationSection": {
             "heading": "<span1>Map </span1> <span2>Localisation</span2>",
             "subheading": "Cliquez sur une région du Sénégal et <br></br> découvrez les coins disponibles."
+        },
+        "Slug": {
+            "OtherPlacesSection": {
+                "seeMore": "Voir les Autres Résultats"
+            }
         }
     },
     "HotelsPage": {

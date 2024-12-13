@@ -10,6 +10,8 @@ interface RightCircleLinkBtnProps {
     Icon?: ElementType;
     className?: string;
     textClassName?: string;
+    iconSpanClassName?: string;
+    iconClassName?: string;
 }
 
 const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
@@ -19,6 +21,8 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
     Icon = ArrowRight,
     className,
     textClassName,
+    iconSpanClassName,
+    iconClassName,
 }) => {
     if (tag === "Link") {
         return (
@@ -40,9 +44,17 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
 
                 {Icon && ( // Ensure Icon is only rendered if provided
                     <span
-                        className={`flex justify-center items-center bg-primary-default group-hover:bg-secondary-default w-14 h-14 rounded-full transition`}
+                        className={cn(
+                            "flex justify-center items-center bg-primary-default group-hover:bg-secondary-default w-14 h-14 rounded-full transition",
+                            iconSpanClassName
+                        )}
                     >
-                        <Icon className="stroke-secondary-default group-hover:stroke-primary-default transition" />
+                        <Icon
+                            className={cn(
+                                "stroke-secondary-default group-hover:stroke-primary-default transition",
+                                iconClassName
+                            )}
+                        />
                     </span>
                 )}
             </Link>
@@ -64,9 +76,17 @@ const RightCircleLinkBtn: FC<RightCircleLinkBtnProps> = ({
 
             {Icon && ( // Ensure Icon is only rendered if provided
                 <span
-                    className={`flex justify-center items-center bg-primary-default group-hover:bg-secondary-default w-14 h-14 rounded-full transition`}
+                    className={cn(
+                        "flex justify-center items-center bg-primary-default group-hover:bg-secondary-default w-14 h-14 rounded-full transition",
+                        iconSpanClassName
+                    )}
                 >
-                    <Icon className="stroke-secondary-default group-hover:stroke-primary-default transition" />
+                    <Icon
+                        className={cn(
+                            "stroke-secondary-default group-hover:stroke-primary-default transition",
+                            iconClassName
+                        )}
+                    />
                 </span>
             )}
         </button>

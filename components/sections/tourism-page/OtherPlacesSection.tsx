@@ -1,52 +1,56 @@
 import React from "react";
-import SectionPattern from "../SectionPattern";
 import SectionContainer from "../SectionContainer";
+import SectionPattern from "../SectionPattern";
 import PlaceCard from "@/components/cards/PlaceCard";
-import Pagination from "@/components/Pagination";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-const PlacesSection = () => {
+const OtherPlacesSection = () => {
+    const t = useTranslations("TourismPage.Slug.OtherPlacesSection");
+
     return (
-        <SectionPattern divClassName="py-28">
+        <SectionPattern divClassName="p-0 pb-48">
             <SectionContainer>
-                <div className="flex flex-col items-center w-full h-full gap-20">
+                <div className="flex flex-col items-center w-full h-full gap-28">
                     <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 place-items-center w-full gap-10">
                         <div className="w-[310px] min-[500px]:w-[440px] h-[520px] min-[500px]:h-[630px]">
                             <PlaceCard
                                 place={{
-                                    name: "Iles de saloum",
+                                    name: "Stade Diamiadio",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
-                                    bgImg: "bg-[url('/assets/ile-de-saloum.png')]",
+                                    bgImg: "bg-[url('/assets/stade-diamiadio.png')]",
                                 }}
                             />
                         </div>
                         <div className="w-[310px] min-[500px]:w-[440px] h-[520px] min-[500px]:h-[630px]">
                             <PlaceCard
                                 place={{
-                                    name: "CICES Foire",
+                                    name: "Casamance",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
-                                    bgImg: "bg-[url('/assets/cices-foire.png')]",
+                                    bgImg: "bg-[url('/assets/casamance.png')]",
                                 }}
                             />
                         </div>
                         <div className="w-[310px] min-[500px]:w-[440px] h-[520px] min-[500px]:h-[630px]">
                             <PlaceCard
                                 place={{
-                                    name: "Lac Rose",
+                                    name: "Mosquée",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
-                                    bgImg: "bg-[url('/assets/lac-rose.png')]",
+                                    bgImg: "bg-[url('/assets/mosquee.png')]",
                                 }}
                             />
                         </div>
                     </div>
-                    <div className="flex justify-end w-full">
-                        <Pagination
-                            currentPage={8}
-                            totalPages={10}
-                            href="tourism"
-                        />
+                    <div>
+                        <Link
+                            href="#"
+                            className="font-bold text-secondary-default underline text-[clamp(18px,_6vw,_28px)] leading-none"
+                        >
+                            {t("seeMore")}
+                        </Link>
                     </div>
                 </div>
             </SectionContainer>
@@ -54,4 +58,4 @@ const PlacesSection = () => {
     );
 };
 
-export default PlacesSection;
+export default OtherPlacesSection;

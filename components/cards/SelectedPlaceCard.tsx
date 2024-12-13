@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 import HearthIcon from "@/public/assets/hearth-icon.svg";
 import ShareIcon from "@/public/assets/share-icon.svg";
 import StarIcon from "@/public/assets/star-icon.svg";
+import RightCircleLinkBtn from "../buttons/RightCircleLinkBtn";
+import ItineraryIcon from "@/public/assets/itinerary-icon.svg";
 
 interface SelectedPlaceCardProps {
     place: {
@@ -15,21 +17,36 @@ interface SelectedPlaceCardProps {
 const SelectedPlaceCard = ({ place }: SelectedPlaceCardProps) => {
     return (
         <div className="grid grid-cols-2 w-full h-full">
-            <div
-                className={cn(
-                    `flex flex-col justify-between bg-primary-default bg-cover bg-center bg-no-repeat w-full h-[650px] rounded-[30px] overflow-hidden`,
-                    place.bgImg
-                )}
-            >
-                <div className="flex justify-end w-full h-fit py-3 px-4">
-                    <div className="flex items-center gap-2">
-                        <button>
-                            <HearthIcon className="fill-white scale-75" />
-                        </button>
-                        <button>
-                            <ShareIcon className="fill-white" />
-                        </button>
+            <div className="relative w-full h-[650px]">
+                <div
+                    className={cn(
+                        `flex flex-col justify-between bg-primary-default bg-cover bg-center bg-no-repeat w-full h-full rounded-[30px] overflow-hidden`,
+                        place.bgImg
+                    )}
+                >
+                    <div className="flex justify-between w-full h-fit py-3 pl-5 pr-8">
+                        <div>
+                            <RightCircleLinkBtn
+                                text="Itinéraire"
+                                className="border-none bg-white hover:bg-secondary-default py-1"
+                                textClassName="text-secondary-default group-hover:text-white"
+                                iconSpanClassName="group-hover:bg-primary-default"
+                                iconClassName="group-hover:stroke-secondary-default"
+                                Icon={ItineraryIcon}
+                            />
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <button>
+                                <HearthIcon className="fill-white scale-75" />
+                            </button>
+                            <button>
+                                <ShareIcon className="fill-white" />
+                            </button>
+                        </div>
                     </div>
+                </div>
+                <div className="absolute -bottom-2 -right-2 bg-white p-2 rounded-tl-[45px] before:content-[''] before:absolute before:top-[42px] before:left-[-50px] before:w-[50px] before:h-[40px] before:bg-transparent before:rounded-br-[30px] before:shadow-[6px_12px_0_0_#FFF] after:absolute after:-top-[50px] after:right-[8px] after:w-[50px] after:h-[50px] after:bg-transparent after:rounded-br-[30px] after:shadow-[10px_8px_0_0_#FFF]">
+                    <RightCircleLinkBtn text="Réservation" />
                 </div>
             </div>
             <div className="flex flex-col w-full h-full px-10 pt-5">
