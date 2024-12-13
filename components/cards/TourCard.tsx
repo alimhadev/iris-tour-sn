@@ -104,7 +104,7 @@ const TourCard = ({ tour }: TourCardProps) => {
                                 </span>
                             </div>
                         </div>
-                        <div className="flex justify-center w-full">
+                        <div className="flex justify-center">
                             <RightCircleLinkBtn text={t("cta")} />
                         </div>
                     </div>
