@@ -182,6 +182,13 @@
         "HeroSection": {
             "heading": "<span1>Vivez des aventures <br></br> exceptionnelles</span1>",
             "subheading": "Explorez des sites incroyables et partez à la découverte de lieux <br></br> paradisiaques du Sénégal."
+        },
+        "ToursSection": {
+            "tourCard": {
+                "itinerary": "Itinéraire",
+                "price": "Tarif",
+                "cta": "Réservation"
+            }
         }
     },
     "EventsPage": {
