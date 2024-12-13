@@ -14,6 +14,7 @@ const PlacesSection = () => {
                             <PlaceCard
                                 place={{
                                     name: "Iles de saloum",
+                                    slug: "iles-de-saloum",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
                                     bgImg: "bg-[url('/assets/ile-de-saloum.png')]",
@@ -24,6 +25,7 @@ const PlacesSection = () => {
                             <PlaceCard
                                 place={{
                                     name: "CICES Foire",
+                                    slug: "cices-foire",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
                                     bgImg: "bg-[url('/assets/cices-foire.png')]",
@@ -34,6 +36,7 @@ const PlacesSection = () => {
                             <PlaceCard
                                 place={{
                                     name: "Lac Rose",
+                                    slug: "lac-rose",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
                                     bgImg: "bg-[url('/assets/lac-rose.png')]",

@@ -159,9 +159,23 @@
             "heading": "<span1>Séjournez dans le <br></br> luxe au Sénégal</span1>",
             "subheading": "Choisissez parmi une sélection d'hôtels 5 étoiles pour une <br></br> expérience inoubliable."
         },
+        "HotelsSection": {
+            "readMore": "Lire la suite",
+            "cta": "Réservation"
+        },
         "MapLocationSection": {
             "heading": "<span1>Map </span1> <span2>Localisation</span2>",
             "subheading": "Cliquez sur une région du Sénégal et <br></br> découvrez l’hôtel disponible."
+        },
+        "Slug": {
+            "SuitesSection": {
+                "heading": "<span1>Les </span1> <span2>Chambres</span2>",
+                "subheading": "Les meilleurs suites pour vous <br></br> détendre.",
+                "bed": "Lit",
+                "bathroom": "Bain",
+                "surface": "Surface",
+                "cta": "Réservation"
+            }
         }
     },
     "ToursPage": {

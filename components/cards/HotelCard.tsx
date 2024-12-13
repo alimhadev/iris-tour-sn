@@ -8,8 +8,8 @@ import Link from "next/link";
 import RightCircleLinkBtn from "../buttons/RightCircleLinkBtn";
 import { useTranslations } from "next-intl";
 
-interface PlaceCardProps {
-    place: {
+interface HotelCardProps {
+    hotel: {
         name: string;
         slug: string;
         description: string;
@@ -17,15 +17,15 @@ interface PlaceCardProps {
     };
 }
 
-const PlaceCard: FC<PlaceCardProps> = ({ place }) => {
-    const t = useTranslations("TourismPage.PlacesSection");
+const HotelCard: FC<HotelCardProps> = ({ hotel }) => {
+    const t = useTranslations("HotelsPage.HotelsSection");
 
     return (
         <div className="flex flex-col items-center w-full h-full gap-2">
             <div
                 className={cn(
                     `flex flex-col justify-between w-full h-full bg-primary-default bg-cover bg-center bg-no-repeat rounded-[30px] overflow-hidden`,
-                    place.bgImg
+                    hotel.bgImg
                 )}
             >
                 <div className="flex justify-end w-full h-fit py-3 px-4">
@@ -41,7 +41,7 @@ const PlaceCard: FC<PlaceCardProps> = ({ place }) => {
                 <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-t from-black/50 to-black/5 backdrop-blur-sm h-fit gap-10 px-4 py-5">
                     <div className="flex flex-col items-center md:items-start h-fit gap-4">
                         <span className="font-thin font-secondary italic text-white text-[clamp(40px,_6vw,_52px)] leading-[30px] text-center md:text-left">
-                            {place.name}
+                            {hotel.name}
                         </span>
                         <div className="flex items-center gap-1">
                             <StarIcon className="fill-white" />
@@ -49,9 +49,6 @@ const PlaceCard: FC<PlaceCardProps> = ({ place }) => {
                             <StarIcon className="fill-white" />
                             <StarIcon className="fill-white" />
                             <StarIcon className="fill-white" />
-                            {/* <span className="font-thin font-secondary text-white text-[24px]">
-                                    4.5
-                                </span> */}
                         </div>
                     </div>
                 </div>
@@ -59,11 +56,11 @@ const PlaceCard: FC<PlaceCardProps> = ({ place }) => {
 
             <div className="flex flex-col items-start border border-secondary-default bg-white w-full h-fit gap-10 pt-4 pb-6 rounded-[30px] shadow-lg">
                 <p className="text-[clamp(16px,_2vw,_18px)] overflow-ellipsis line-clamp-4 px-3 sm:px-5">
-                    {place.description}
+                    {hotel.description}
                 </p>
                 <div className="relative flex items-start w-full h-fit px-3 sm:px-5 gap-5">
                     <Link
-                        href={`/tourism/${place.slug}`}
+                        href={`/hotels/${hotel.slug}`}
                         className="flex items-center gap-4 z-20"
                     >
                         <span className="text-secondary-default text-[16px] md:text-[22px]">
@@ -84,4 +81,4 @@ const PlaceCard: FC<PlaceCardProps> = ({ place }) => {
     );
 };
 
-export default PlaceCard;
+export default HotelCard;
