@@ -2,16 +2,7 @@
 
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {
-    Form,
-    FormField,
-    FormControl,
-    FormDescription,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "../ui/form";
-import { Input } from "../ui/input";
+import { Form, FormField } from "../ui/form";
 import { newsletterSchema } from "@/utils/validations/newsletter";
 import { useForm } from "react-hook-form";
 import FormItemInput from "../form-items/FormItemInput";

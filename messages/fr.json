@@ -215,6 +215,39 @@
     "ContactPage": {
         "HeroSection": {
             "heading": "<span1>Contactez-nous</span1>"
+        },
+        "ContactSection": {
+            "heading": "<span1>Planifiez vos séjours de détentes et de découvertes avec </span1> <span2>Iris Tour</span2>",
+            "card1": {
+                "title": "Réservation :",
+                "line1": "Lundi - Dimanche",
+                "line2": "06h00 à 20h00"
+            },
+            "card2": {
+                "title": "Courriel :",
+                "line1": "Contact@iristour.com",
+                "line2": "infos@iristour.com"
+            },
+            "card3": {
+                "title": "Téléphone :",
+                "line1": "+ 221 78 889 86 85",
+                "line2": "+ 221 78 585 98 74"
+            },
+            "card4": {
+                "title": "Adresse :",
+                "line1": "6 rue Médina ",
+                "line2": "Dakar - Sénégal"
+            }
+        },
+        "InformationSection": {
+            "heading": "<span1>Demande de </span1> <span2>Renseignement</span2>",
+            "subheading": "Remplir le formulaire de demande de renseignements",
+            "name": "Nom :",
+            "email": "Email :",
+            "phone": "Téléphone :",
+            "subject": "Sujet :",
+            "message": "Message :",
+            "sendMessage": "Envoyer un message"
         }
     }
 }

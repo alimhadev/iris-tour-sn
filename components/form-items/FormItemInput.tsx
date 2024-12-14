@@ -4,6 +4,7 @@ import { Input } from "../ui/input";
 import { FormControl, FormMessage } from "../ui/form";
 import { FormItem } from "../ui/form";
 import { FieldValues } from "react-hook-form";
+import { cn } from "@/lib/utils";
 
 interface FormItemInputProps {
     type?: string;
@@ -12,6 +13,7 @@ interface FormItemInputProps {
     value?: string;
     onChange?: (value: string) => void;
     field: FieldValues;
+    className?: string;
 }
 
 const FormItemInput = ({
@@ -21,12 +23,16 @@ const FormItemInput = ({
     value,
     onChange,
     field,
+    className,
 }: FormItemInputProps) => {
     return (
         <FormItem
-            className={`relative bg-gray-100 ${
-                field.error && "border border-red-500"
-            } w-full pt-20 pb-4 px-5 rounded-[20px]`}
+            className={cn(
+                `relative bg-gray-100 ${
+                    field.error && "border border-red-500"
+                } w-full pt-20 pb-4 px-5 rounded-[20px]`,
+                className
+            )}
         >
             <div className="flex items-end border-b border-secondary-default gap-2">
                 <FormLabel className="text-[clamp(24px,_3vw,_32px)] leading-tight text-primary-default whitespace-nowrap">
