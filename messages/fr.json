@@ -199,6 +199,17 @@
         "HeroSection": {
             "heading": "<span1>Assistez à des <br></br> événements <br></br> inoubliables</span1>",
             "subheading": "Ne manquez pas les événements incontournables au Sénégal, <br></br> du festival aux soirées exclusives."
+        },
+        "DiarySection": {
+            "heading": "<span1>Notre </span1> <span2>Agenda</span2>",
+            "subheading": "Retrouvez Tous nos évenevements à  venir",
+            "EventCard": {
+                "cta": "Réservation"
+            }
+        },
+        "ImageGallerySection": {
+            "heading": "<span1>Galerie </span1> <span2>D'images</span2>",
+            "subheading": "Retrouvez nos derniers images d'excursions"
         }
     },
     "ContactPage": {
