@@ -15,7 +15,7 @@ const ToursSection = () => {
                                     endLocation: "Saloum",
                                     description:
                                         "Lorem ipsum dolor sit amet consectetur. Faucibus sit vestibulum etiam pellentesque gravida metus sit quam. Quisque nibh pellentesque tincidunt etiam fermentum in aliquet. Quisque nibh pellentesque tincidunt",
-                                    price: 10000000,
+                                    price: 150000,
                                     startImage:
                                         "bg-[url('/assets/dakar-img.png')]",
                                     endImage:

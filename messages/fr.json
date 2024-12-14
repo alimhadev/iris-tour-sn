@@ -189,6 +189,10 @@
                 "price": "Tarif",
                 "cta": "Réservation"
             }
+        },
+        "ImageGallerySection": {
+            "heading": "<span1>Galerie </span1> <span2>D'images</span2>",
+            "subheading": "Retrouvez nos derniers images d’excursions"
         }
     },
     "EventsPage": {
