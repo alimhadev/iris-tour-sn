@@ -5,6 +5,14 @@ import HeroSubheading from "../../messages/HeroSubheading";
 import RightCircleLinkBtn from "../../buttons/RightCircleLinkBtn";
 import SectionContainer from "../SectionContainer";
 import HeroPattern from "../HeroPattern";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
+import ImageCard from "@/components/cards/ImageCard";
 
 const HeroSection = () => {
     const t = useTranslations("HomePage.HeroSection");
@@ -25,7 +33,7 @@ const HeroSection = () => {
                             >
                                 {(tags) => t.rich("heading", tags)}
                             </HeroHeadingRichText>
-                            <HeroSubheading>
+                            <HeroSubheading className="text-center md:text-start">
                                 {(tags) => t.rich("subheading", tags)}
                             </HeroSubheading>
                         </div>
@@ -36,7 +44,50 @@ const HeroSection = () => {
                             />
                         </div>
                     </div>
-                    <div className="hidden md:block"></div>
+                    <div className="hidden md:flex justify-center items-end w-1/2 h-full">
+                        <Carousel
+                            opts={{
+                                align: "start",
+                                loop: true,
+                            }}
+                            className="w-[500px]"
+                        >
+                            <CarouselContent className="py-10">
+                                <CarouselItem className="basis-1/3">
+                                    <ImageCard
+                                        image="bg-[url('/assets/hero-img1.png')]"
+                                        className="w-[150px] h-[170px]"
+                                    />
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <ImageCard
+                                        image="bg-[url('/assets/hero-img1.png')]"
+                                        className="w-[150px] h-[170px]"
+                                    />
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <ImageCard
+                                        image="bg-[url('/assets/hero-img1.png')]"
+                                        className="w-[150px] h-[170px]"
+                                    />
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <ImageCard
+                                        image="bg-[url('/assets/hero-img1.png')]"
+                                        className="w-[150px] h-[170px]"
+                                    />
+                                </CarouselItem>
+                            </CarouselContent>
+                            <CarouselPrevious
+                                variant="carousel"
+                                className="left-0 -translate-x-1/2 h-[60px] w-[60px]"
+                            />
+                            <CarouselNext
+                                variant="carousel"
+                                className="right-0 translate-x-1/2 h-[60px] w-[60px]"
+                            />
+                        </Carousel>
+                    </div>
                 </div>
             </SectionContainer>
         </HeroPattern>

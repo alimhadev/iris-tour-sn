@@ -14,11 +14,11 @@ const tailwindConfig: Config = {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
                 primary: {
-                    default: "var(--color-primary-default)",
-                    text: "var(--color-primary-text)",
+                    default: "#354739",
+                    text: "#19403f",
                 },
                 secondary: {
-                    default: "var(--color-secondary-default)",
+                    default: "#ce8624",
                 },
             },
             // boxShadow: {
