@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
     Carousel,
     CarouselApi,
@@ -17,17 +17,10 @@ import {
 
 type PropType = {
     setSelectedBgImg: (bgImg: string) => void;
-    selectedBgImg: string;
+    images: string[];
 };
 
-const images = [
-    "bg-[url('/assets/hero-img1.png')]",
-    "bg-[url('/assets/hero-img2.png')]",
-    "bg-[url('/assets/hero-img3.png')]",
-    "bg-[url('/assets/hero-img4.png')]",
-];
-
-const HeroCarousel = ({ setSelectedBgImg, selectedBgImg }: PropType) => {
+const HeroCarousel = ({ setSelectedBgImg, images }: PropType) => {
     const [api, setApi] = useState<CarouselApi>();
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(api);
 
@@ -36,6 +29,11 @@ const HeroCarousel = ({ setSelectedBgImg, selectedBgImg }: PropType) => {
         setSelectedBgImg(images[index]);
         console.log(index);
     };
+
+    useEffect(() => {
+        const index = api?.selectedScrollSnap() ?? 0;
+        handleDotButtonClick(index);
+    }, [selectedIndex]);
 
     return (
         <div className="relative flex justify-center items-end w-full h-full">

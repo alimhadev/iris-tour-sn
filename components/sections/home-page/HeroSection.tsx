@@ -9,12 +9,17 @@ import HeroPattern from "../HeroPattern";
 import HeroCarousel from "@/components/carousels/HeroCarousel";
 import { useState } from "react";
 
+const images = [
+    "bg-[url('/assets/hero-img1.png')]",
+    "bg-[url('/assets/hero-img2.png')]",
+    "bg-[url('/assets/hero-img3.png')]",
+    "bg-[url('/assets/hero-img4.png')]",
+];
+
 const HeroSection = () => {
     const t = useTranslations("HomePage.HeroSection");
 
-    const [selectedBgImg, setSelectedBgImg] = useState<string>(
-        "bg-[url('/assets/hero-img1.png')]"
-    );
+    const [selectedBgImg, setSelectedBgImg] = useState<string>(images[0]);
 
     return (
         <HeroPattern bgImg={selectedBgImg}>
@@ -46,7 +51,7 @@ const HeroSection = () => {
                     <div className="hidden md:block w-1/2 h-full">
                         <HeroCarousel
                             setSelectedBgImg={setSelectedBgImg}
-                            selectedBgImg={selectedBgImg}
+                            images={images}
                         />
                     </div>
                 </div>
