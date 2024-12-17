@@ -1,24 +1,23 @@
-import React from "react";
+"use client";
+
 import HeroHeadingRichText from "../../messages/HeroHeadingRichText";
 import { useTranslations } from "next-intl";
 import HeroSubheading from "../../messages/HeroSubheading";
 import RightCircleLinkBtn from "../../buttons/RightCircleLinkBtn";
 import SectionContainer from "../SectionContainer";
 import HeroPattern from "../HeroPattern";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
-import ImageCard from "@/components/cards/ImageCard";
+import HeroCarousel from "@/components/carousels/HeroCarousel";
+import { useState } from "react";
 
 const HeroSection = () => {
     const t = useTranslations("HomePage.HeroSection");
 
+    const [selectedBgImg, setSelectedBgImg] = useState<string>(
+        "bg-[url('/assets/hero-img1.png')]"
+    );
+
     return (
-        <HeroPattern bgImg="bg-[url('/assets/hero-img1.png')]">
+        <HeroPattern bgImg={selectedBgImg}>
             <SectionContainer>
                 <div className="flex justify-center md:justify-between items-center w-full h-full py-4">
                     <div className="flex flex-col items-center md:items-start w-full md:w-auto gap-10">
@@ -44,49 +43,11 @@ const HeroSection = () => {
                             />
                         </div>
                     </div>
-                    <div className="hidden md:flex justify-center items-end w-1/2 h-full">
-                        <Carousel
-                            opts={{
-                                align: "start",
-                                loop: true,
-                            }}
-                            className="w-[500px]"
-                        >
-                            <CarouselContent className="py-10">
-                                <CarouselItem className="basis-1/3">
-                                    <ImageCard
-                                        image="bg-[url('/assets/hero-img1.png')]"
-                                        className="w-[150px] h-[170px]"
-                                    />
-                                </CarouselItem>
-                                <CarouselItem className="basis-1/3">
-                                    <ImageCard
-                                        image="bg-[url('/assets/hero-img1.png')]"
-                                        className="w-[150px] h-[170px]"
-                                    />
-                                </CarouselItem>
-                                <CarouselItem className="basis-1/3">
-                                    <ImageCard
-                                        image="bg-[url('/assets/hero-img1.png')]"
-                                        className="w-[150px] h-[170px]"
-                                    />
-                                </CarouselItem>
-                                <CarouselItem className="basis-1/3">
-                                    <ImageCard
-                                        image="bg-[url('/assets/hero-img1.png')]"
-                                        className="w-[150px] h-[170px]"
-                                    />
-                                </CarouselItem>
-                            </CarouselContent>
-                            <CarouselPrevious
-                                variant="carousel"
-                                className="left-0 -translate-x-1/2 h-[60px] w-[60px]"
-                            />
-                            <CarouselNext
-                                variant="carousel"
-                                className="right-0 translate-x-1/2 h-[60px] w-[60px]"
-                            />
-                        </Carousel>
+                    <div className="hidden md:block w-1/2 h-full">
+                        <HeroCarousel
+                            setSelectedBgImg={setSelectedBgImg}
+                            selectedBgImg={selectedBgImg}
+                        />
                     </div>
                 </div>
             </SectionContainer>
