@@ -10,7 +10,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import ImageCard from "../cards/ImageCard";
+import ImageTextCard from "../cards/ImageTextCard";
 import {
     DotButton,
     useDotButton,
@@ -62,7 +62,7 @@ const HeroCarousel = ({ setSelectedBgImg, images }: PropType) => {
                 <CarouselContent className="py-10">
                     {images.map((image, index) => (
                         <CarouselItem key={index} className="basis-1/3">
-                            <ImageCard
+                            <ImageTextCard
                                 image={image}
                                 className={`w-full h-[170px] ${
                                     index === selectedIndex

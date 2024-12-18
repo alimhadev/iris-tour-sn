@@ -4,12 +4,20 @@ import RightCircleLinkBtn from "../buttons/RightCircleLinkBtn";
 import { useTranslations } from "next-intl";
 import ItineraryIcon from "@/public/assets/itinerary-icon.svg";
 import Image from "next/image";
+import FavoritePlacesCarousel from "../carousels/FavoritePlacesCarousel";
 
 interface FavoritePlacesCardProps {
     bgImg: string;
     city: string;
     placeName: string;
 }
+
+const images = [
+    { url: "bg-[url('/assets/canoe-img.png')]", text: "Canoe" },
+    { url: "bg-[url('/assets/riu-baobab.png')]", text: "Riu Baobab" },
+    { url: "bg-[url('/assets/ile-de-goree.jpg')]", text: "Ile de Goree" },
+    { url: "bg-[url('/assets/ile-de-goree2.png')]", text: "Ile de Goree" },
+];
 
 const FavoritePlacesCard = ({
     bgImg,
@@ -56,7 +64,7 @@ const FavoritePlacesCard = ({
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-between bg-white w-full min-h-[650px]">
+            <div className="flex flex-col justify-between bg-white w-full min-h-[650px] gap-4">
                 <div className="flex flex-col md:flex-row justify-between items-center w-full h-fit gap-4 px-8 py-5">
                     <span className="font-bold text-primary-default text-[25px] text-center md:text-left">
                         {t("section2.title")}
@@ -72,6 +80,12 @@ const FavoritePlacesCard = ({
                         alt="Sénégal"
                         width={500}
                         height={500}
+                    />
+                </div>
+                <div>
+                    <FavoritePlacesCarousel
+                        images={images.map((image) => image.url)}
+                        texts={images.map((image) => image.text)}
                     />
                 </div>
             </div>

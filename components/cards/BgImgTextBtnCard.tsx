@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { FC, ReactNode } from "react";
-import CircleBtn from "../buttons/CircleBtn";
+import CircleLinkBtn from "../buttons/CircleLinkBtn";
 
 interface Props {
     bgImg: string;
@@ -8,6 +8,7 @@ interface Props {
     description: ReactNode;
     theme: "primary" | "secondary";
     className?: string;
+    href?: string;
 }
 
 const BgImgTextBtnCard: FC<Props> = ({
@@ -16,6 +17,7 @@ const BgImgTextBtnCard: FC<Props> = ({
     description,
     className,
     theme,
+    href = "#",
 }) => {
     const bgColor =
         theme === "primary" ? "bg-primary-default" : "bg-secondary-default";
@@ -48,7 +50,12 @@ const BgImgTextBtnCard: FC<Props> = ({
             <div
                 className={`absolute -bottom-[2px] right-0 flex justify-center items-center border-8 border-white bg-white w-fit h-fit rounded-tl-[45px] before:content-[''] before:absolute before:-bottom-[6px] before:-left-[48px] before:w-[40px] before:h-[40px] before:${bgColor} before:rounded-br-[45px] before:shadow-[10px_10px_0px_10px] before:shadow-white after:content-[''] after:absolute after:-top-[48px] after:-right-[8px] after:w-[40px] after:h-[40px] after:${bgColor} after:rounded-br-[45px] after:shadow-[10px_10px_0px_10px] after:shadow-white`}
             >
-                <CircleBtn theme={theme} className="z-10" />
+                <CircleLinkBtn
+                    tag="Link"
+                    href={href}
+                    theme={theme}
+                    className="z-10"
+                />
             </div>
         </div>
     );
