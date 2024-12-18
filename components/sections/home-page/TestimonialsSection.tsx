@@ -1,4 +1,3 @@
-import React from "react";
 import SectionContainer from "../SectionContainer";
 import SectionHeading from "../../messages/SectionHeading";
 import SectionSubheading from "../../messages/SectionSubheading";
@@ -6,6 +5,30 @@ import DotsDeco3 from "@/public/assets/dots-deco3.svg";
 import { useTranslations } from "next-intl";
 import RightCircleLinkBtn from "../../buttons/RightCircleLinkBtn";
 import SectionPattern from "../SectionPattern";
+import TestimonialsCarousel from "@/components/carousels/TestimonialsCarousel";
+import avatar1 from "@/public/assets/avatar1.png";
+
+const testimonials = [
+    {
+        testimony:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        avatar: avatar1,
+        name: "John Doe",
+        role: "Client",
+    },
+    {
+        testimony: "Testimony 1",
+        avatar: avatar1,
+        name: "John Doe",
+        role: "Client",
+    },
+    {
+        testimony: "Testimony 1",
+        avatar: avatar1,
+        name: "John Doe",
+        role: "Client",
+    },
+];
 
 const TestimonialsSection = () => {
     const t = useTranslations("HomePage.TestimonialsSection");
@@ -17,9 +40,11 @@ const TestimonialsSection = () => {
                     <DotsDeco3 />
                 </div>
 
-                <div className="flex justify-center lg:justify-between items-center w-full h-full gap-10">
-                    <div className="hidden lg:block"></div>
-                    <div className="flex flex-col items-end gap-10 lg:gap-72">
+                <div className="flex justify-center lg:justify-between items-end w-full h-full gap-10">
+                    <div className="hidden lg:block w-full h-full">
+                        <TestimonialsCarousel testimonials={testimonials} />
+                    </div>
+                    <div className="flex flex-col items-center lg:items-end w-full h-full gap-24 lg:gap-72">
                         <div className="flex flex-col items-center lg:items-end">
                             <SectionHeading
                                 className="text-center lg:text-right"
@@ -30,6 +55,9 @@ const TestimonialsSection = () => {
                             <SectionSubheading className="text-white text-center lg:text-right">
                                 {(tags) => t.rich("subheading", tags)}
                             </SectionSubheading>
+                        </div>
+                        <div className="block lg:hidden">
+                            <TestimonialsCarousel testimonials={testimonials} />
                         </div>
                         <div className="flex justify-center lg:justify-end w-full">
                             <RightCircleLinkBtn text={t("cta")} />

@@ -17,7 +17,7 @@ const ImageCard: FC<ImageCardProps> = ({ image, text, className }) => {
             )}
         >
             {text && (
-                <div className="flex items-end bg-gradient-to-t from-secondary-default via-80% via-primary-default/10 to-primary-default/5 backdrop-blur-sm  w-full h-1/3 p-2 rounded-b-[16px]">
+                <div className="flex items-end bg-gradient-to-t from-secondary-default via-80% via-primary-default/10 to-primary-default/5 backdrop-blur-sm w-full h-1/3 p-2 rounded-b-[16px]">
                     <p className="font-light text-white text-center text-[clamp(16px,1.5vw,20px)]">
                         {text}
                     </p>
