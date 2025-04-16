@@ -29,13 +29,28 @@ const ServicesSection = () => {
                     <div className="grid lg:grid-cols-2 2xl:grid-cols-4 w-full gap-2">
                         <div className="min-w-[300px] h-[554px]">
                             <BgImgTextBtnCard
+                                href="/transport"
+                                bgImg="bg-[url('/assets/mercedes.jpg')]"
+                                title={t("card1.title")}
+                                description={
+                                    <TwoSpanDescription theme="black">
+                                        {(tags) =>
+                                            t.rich("card1.description", tags)
+                                        }
+                                    </TwoSpanDescription>
+                                }
+                                theme="black"
+                            />
+                        </div>
+                        <div className="min-w-[300px] h-[554px]">
+                            <BgImgTextBtnCard
                                 href="/tourism"
                                 bgImg="bg-[url('/assets/family-stone-statue.jpg')]"
-                                title={t("card1.title")}
+                                title={t("card2.title")}
                                 description={
                                     <TwoSpanDescription theme="secondary">
                                         {(tags) =>
-                                            t.rich("card1.description", tags)
+                                            t.rich("card2.description", tags)
                                         }
                                     </TwoSpanDescription>
                                 }
@@ -46,11 +61,11 @@ const ServicesSection = () => {
                             <BgImgTextBtnCard
                                 href="/hotels"
                                 bgImg="bg-[url('/assets/hotel-img.jpg')]"
-                                title={t("card2.title")}
+                                title={t("card3.title")}
                                 description={
                                     <TwoSpanDescription theme="primary">
                                         {(tags) =>
-                                            t.rich("card2.description", tags)
+                                            t.rich("card3.description", tags)
                                         }
                                     </TwoSpanDescription>
                                 }
@@ -61,11 +76,11 @@ const ServicesSection = () => {
                             <BgImgTextBtnCard
                                 href="/tours"
                                 bgImg="bg-[url('/assets/tour-img.jpg')]"
-                                title={t("card3.title")}
+                                title={t("card4.title")}
                                 description={
                                     <TwoSpanDescription theme="secondary">
                                         {(tags) =>
-                                            t.rich("card3.description", tags)
+                                            t.rich("card4.description", tags)
                                         }
                                     </TwoSpanDescription>
                                 }
@@ -76,11 +91,11 @@ const ServicesSection = () => {
                             <BgImgTextBtnCard
                                 href="/events"
                                 bgImg="bg-[url('/assets/event-img.jpg')]"
-                                title={t("card4.title")}
+                                title={t("card5.title")}
                                 description={
                                     <TwoSpanDescription theme="primary">
                                         {(tags) =>
-                                            t.rich("card4.description", tags)
+                                            t.rich("card5.description", tags)
                                         }
                                     </TwoSpanDescription>
                                 }

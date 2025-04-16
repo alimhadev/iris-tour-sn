@@ -8,7 +8,7 @@ interface TwoSpanDescriptionProps {
     className?: string;
     span1ClassName?: string;
     span2ClassName?: string;
-    theme: "primary" | "secondary";
+    theme: "primary" | "secondary" | "black";
 }
 
 const TwoSpanDescription: FC<TwoSpanDescriptionProps> = ({
@@ -25,9 +25,9 @@ const TwoSpanDescription: FC<TwoSpanDescriptionProps> = ({
                     <span
                         className={cn(
                             `font-bold text-[clamp(14px,_2vw,_18px)] leading-[22px] ${
-                                theme === "primary"
-                                    ? "text-secondary-default"
-                                    : "text-primary-default"
+                                theme === "primary" && "text-secondary-default"
+                            } ${
+                                theme === "secondary" && "text-primary-default"
                             }`,
                             span1ClassName
                         )}
@@ -38,7 +38,13 @@ const TwoSpanDescription: FC<TwoSpanDescriptionProps> = ({
                 span2: (chunks) => (
                     <span
                         className={cn(
-                            `italic text-[clamp(14px,_2vw,_18px)] leading-[22px] text-white font-secondary`,
+                            `italic text-[clamp(14px,_2vw,_18px)] leading-[22px] ${
+                                (theme === "primary" ||
+                                    theme === "secondary") &&
+                                "text-white"
+                            } ${
+                                theme === "black" && "text-secondary-default"
+                            }  font-secondary`,
                             span2ClassName
                         )}
                     >

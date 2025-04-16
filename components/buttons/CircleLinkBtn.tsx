@@ -8,7 +8,7 @@ interface CircleBtnProps {
     href?: string;
     className?: string;
     Icon?: ElementType;
-    theme?: "primary" | "secondary";
+    theme?: "primary" | "secondary" | "black";
 }
 
 const CircleBtn = ({
@@ -22,9 +22,13 @@ const CircleBtn = ({
         <button
             className={cn(
                 `group flex justify-center items-center bg-transparent w-[65px] h-[65px] rounded-full border-[2px] ${
-                    theme === "primary"
-                        ? "border-primary-default hover:bg-primary-default"
-                        : "border-secondary-default hover:bg-secondary-default"
+                    theme === "primary" &&
+                    "border-primary-default hover:bg-primary-default"
+                } ${
+                    theme === "secondary" &&
+                    "border-secondary-default hover:bg-secondary-default"
+                } ${
+                    theme === "black" && "border-black hover:bg-black"
                 } transition`,
                 className
             )}
@@ -32,9 +36,9 @@ const CircleBtn = ({
             {Icon && (
                 <Icon
                     className={`group-hover:stroke-white ${
-                        theme === "primary"
-                            ? "stroke-primary-default"
-                            : "stroke-secondary-default"
+                        theme === "primary" && "stroke-primary-default"
+                    } ${theme === "secondary" && "stroke-secondary-default"} ${
+                        theme === "black" && "stroke-black"
                     } transition`}
                 />
             )}
@@ -44,9 +48,13 @@ const CircleBtn = ({
             href={href}
             className={cn(
                 `group flex justify-center items-center bg-transparent w-[65px] h-[65px] rounded-full border-[2px] ${
-                    theme === "primary"
-                        ? "border-primary-default hover:bg-primary-default"
-                        : "border-secondary-default hover:bg-secondary-default"
+                    theme === "primary" &&
+                    "border-primary-default hover:bg-primary-default"
+                } ${
+                    theme === "secondary" &&
+                    "border-secondary-default hover:bg-secondary-default"
+                } ${
+                    theme === "black" && "border-black hover:bg-black"
                 } transition`,
                 className
             )}
@@ -54,9 +62,9 @@ const CircleBtn = ({
             {Icon && (
                 <Icon
                     className={`group-hover:stroke-white ${
-                        theme === "primary"
-                            ? "stroke-primary-default"
-                            : "stroke-secondary-default"
+                        theme === "primary" && "stroke-primary-default"
+                    } ${theme === "secondary" && "stroke-secondary-default"} ${
+                        theme === "black" && "stroke-black"
                     } transition`}
                 />
             )}

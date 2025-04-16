@@ -94,18 +94,22 @@
             "heading": "<span1>Nos </span1> <span2>Services</span2>",
             "subheading": "De la découverte culturelle aux événements mémorables, <br></br> IRIS TOUR réalise vos envies.",
             "card1": {
+                "title": "Transports",
+                "description": "<span1>Voyagez facilement vers </span1> <span2>les plus belles destinations </span2> <span1>du Sénégal.</span1>"
+            },
+            "card2": {
                 "title": "Sites touristiques",
                 "description": "<span1>Les plus </span1> <span2>beaux sites touristiques </span2> <span1>du Sénégal à découvrir.</span1>"
             },
-            "card2": {
+            "card3": {
                 "title": "Hôtels de Luxe",
                 "description": "<span1>Séjournez dans des endroits </span1> <span2>prestigieux et confortables.</span2>"
             },
-            "card3": {
+            "card4": {
                 "title": "Excursions",
                 "description": "<span1>Vivez des aventures uniques dans des </span1> <span2>lieux paradisiaques.</span2>"
             },
-            "card4": {
+            "card5": {
                 "title": "Événements",
                 "description": "<span1>Participez à des </span1> <span2>événements exclusifs </span2> <span1>tout au long de l'année.</span1>"
             }

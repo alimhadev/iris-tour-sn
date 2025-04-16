@@ -28,7 +28,6 @@ const HeroCarousel = ({ setSelectedBgImg, images }: PropType) => {
     const handleDotButtonClick = (index: number) => {
         onDotButtonClick(index);
         setSelectedBgImg(images[index]);
-        console.log(index);
     };
 
     useEffect(() => {
